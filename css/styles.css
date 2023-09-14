@@ -251,7 +251,22 @@ font-style: normal;
     max-width: 1440px;
     background-position: center;
     background-size: cover; 
-}
+
+    }
+    @media (min-resolution: 192dpi) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/people-office2x.jpg);
+        }
+    }
+    
+    @media (min-width: 1158px) {
+        .hero {
+            padding: 188px 0;
+        }
+    }
+
+
 .hero-title {
     color: #ffffff;
     font-weight: 700;
