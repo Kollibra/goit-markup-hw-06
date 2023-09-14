@@ -170,7 +170,7 @@ img {
 /* секція 1 */
 .hero {
 	background-color: var(--dark-navy-blue);
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
