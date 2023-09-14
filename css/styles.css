@@ -48,17 +48,28 @@ img {
 }
 
 .container { 
-   
     width: 1158px;
+    min-width: 288px;
     padding: 0 15px;
     margin-left: auto;
     margin-right:  auto;
 }
+
+@media (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+}
+
+@media (min-width: 1158px) {
+	.container {
+		width: 1158px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
 .container-header {
-    /* width: 1158px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right:  auto; */
     display: flex;
     justify-content: space-between;
         
