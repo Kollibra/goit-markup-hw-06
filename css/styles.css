@@ -277,8 +277,11 @@ letter-spacing: 0.02em;
 	display: none;
 }
 
-.main-header {
+.main-nav {
 	display: none;
+}
+.nav-list {
+    display: none;
 }
 @media (min-width: 768px) {
 	.site-nav {
