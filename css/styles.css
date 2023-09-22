@@ -182,9 +182,9 @@ letter-spacing: 0.02em;
 		visibility: visible;
 		pointer-events: auto;
 	}
-     {
-		fill: rgba(47, 47, 55, 1);
-	}
+     
+		/* fill: rgba(47, 47, 55, 1); */
+	
 
 	.page-nav-link-mobile-menu {
 		display: flex;
@@ -271,18 +271,21 @@ letter-spacing: 0.02em;
 	.icon-mobile-menu {
 		display: none;
 	}
-}
-
-.contact {
-	display: none;
-}
-
-.main-nav {
-	display: none;
+    
+    
 }
 .nav-list {
     display: none;
 }
+.main-nav {
+    display: none;
+}
+.contact {
+	display: none;
+}
+
+
+
 @media (min-width: 768px) {
 	.site-nav {
 		display: flex;
@@ -310,6 +313,8 @@ letter-spacing: 0.02em;
 		align-items: center;
 		font-style: normal;
 	}
+    
+
 }
 
 @media (min-width: 1158px) {
