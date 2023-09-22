@@ -318,10 +318,7 @@ letter-spacing: 0.02em;
 		align-items: center;
 	}
 
-	/* .div-logo {
-		margin-right: 120px;
-	} */
-
+	
 	.main-nav {
 		display: flex;
 		align-items: center;
@@ -354,6 +351,12 @@ letter-spacing: 0.02em;
 		align-items: center;
 		font-style: normal;
 		gap: 40px;
+              
+        padding-top: 24px;
+        padding-bottom: 24px;
+
+
+
 	}
 }
 .link-logo {
@@ -461,30 +464,76 @@ letter-spacing: 0.02em;
 .hero {
     background-color: #2E2F42 ;
     text-align: center;
-    padding: 188px 0 188px;
+    /* padding: 188px 0 188px; */
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     background-position: center;
     background-size: cover; 
+	margin: 0 auto;
+	position: relative;
 }
+@media (min-width: 192px) {
+	.hero {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url("../images/people-office2x.jpg");
+	}
+}
+
+@media (min-width: 1158px) {
+	.hero {
+		padding: 188px 0;
+		max-width: 1440px;
+	}
+}
+
+
+
+
+
 .hero-title {
     color: #ffffff;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
     text-align: center;
     letter-spacing: 0.02em;
-    margin: 0 auto;
-    margin-bottom: 48px;
-    max-width: 496px;
+      
+	font-family: Roboto;
+	font-style: normal;
+	
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	width: 220px;
+	margin: 0 auto 72px;
+	text-transform: capitalize;
 
 
 }
+@media (min-width: 768px) {
+	.hero-title {
+		width: 496px;
+		font-size: 56px;
+		margin: 0 auto 36px;
+		line-height: 1.07;
+		padding: 0;
+	}
+}
+
+@media (min-width: 1158px) {
+	.hero-title {
+		margin: 0 auto 48px;
+	}
+}
+
+
+
+
+
 /*Button*/
 .button {
     display: block;
     min-width: 169px;
+    height: 56px;
     background-color: #4D5AE5 ;
     color: #FFFFFF;
     font-weight: 500;
@@ -495,37 +544,119 @@ letter-spacing: 0.02em;
     border-radius: 4px;
     border: none;
     margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
     
 }
+@media (min-width: 1158px) {
+
+
 .button:hover {
     background-color: #404BBf;
 }
 .button:focus {
     background-color: #404BBf;
 }
+}
+
+
+
 /* Our advantages */
 .advantage-main {
-    padding: 120px 0 120px;
+    margin: 0 auto;
+    
 
 }
+@media (min-width: 1158px) {
+    .advantage-main {
+        padding: 120px 0px;
+    }
+}
+
+.advantage-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+@media (min-width: 768px) {
+    .advantage-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    .ouradvant-item {
+        flex-basis: calc((100% - 24px)/2);
+    }
+}
+@media (min-width: 1158px) {
+    .advantage-list {
+        
+        flex-wrap: nowrap;
+        
+    }
+    .ouradvant-item {
+        width: calc((100% - 72px)/4);
+    }
+}
+.list-title {
+    color: #2e2f42;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .list-title {
+        text-align: left;
+    }
+}
+@media (min-width: 1158px) {
+    .list-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    }
+}
+
 .advantages-background {
+    display: none;
+}
+@media (min-width: 1158px) {
+ .advantages-background {
     background-color: #F4F4FD;
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
     border: 1px solid #8E8F99;
     border-radius: 4px;
     height: 112px; 
+    width: 264;
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
-  
+ }
     
 } 
-.advantages-sprite {
+.list-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+@media (min-width: 1158px) {
+    .list-text {
+        font-weight: 400;
+        width: 264px;
+    }
+}
+
+/* .advantages-sprite {
     width: 64px;
     height: 64px;
-}
+} */
 .ouradvant-list {
     display: flex;
     flex-direction: row;
@@ -533,12 +664,8 @@ letter-spacing: 0.02em;
    
     
 }
-.list-title {
-    margin-bottom: 8px;
-}
-.ouradvant-item {
-    flex-basis: calc((100% - 72px) / 4);
-}
+
+
 /*Our portfolio*/
 
 .portfolio{
