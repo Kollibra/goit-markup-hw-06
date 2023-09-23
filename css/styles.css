@@ -875,7 +875,13 @@ letter-spacing: 0.02em;
     gap: 72;
     align-items: center;
 }
-
+.footer-social-media {
+    margin-top: 72px ;
+    margin-bottom: 72px;
+}
+/* .footer-inscripshion{
+    margin-bottom: 72px;
+} */
 @media (min-width: 768px) {
     .container-position {
       flex-direction: row;
@@ -884,7 +890,9 @@ letter-spacing: 0.02em;
       align-items: start;
       max-width: 584px;
     }
-    
+    .footer-social-media {
+        margin: 0;
+    }
 }
 @media (min-width: 1158px) {
     .container-position {
@@ -944,6 +952,7 @@ footer {
     letter-spacing: 0.03em;
     display: block;
     margin-bottom: 16px;
+    text-align: center;
     
 }
 @media (min-width: 768px) {
