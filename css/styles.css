@@ -594,7 +594,7 @@ letter-spacing: 0.02em;
         
     }
     .ouradvant-item {
-        width: calc((100% - 72px)/4);
+        flex-basis: calc((100% - 72px)/4);
     }
 }
 .list-title {
