@@ -470,6 +470,7 @@ letter-spacing: 0.02em;
     background-size: cover; 
 	margin: 0 auto;
 	position: relative;
+    padding: 72px 0;
 }
 @media (min-width: 192px) {
 	.hero {
@@ -561,13 +562,15 @@ letter-spacing: 0.02em;
 
 /* Our advantages */
 .advantage-main {
-    margin: 0 auto;
+    margin: 96px auto;
     
 
 }
+
+
 @media (min-width: 1158px) {
     .advantage-main {
-        padding: 120px 0px;
+        margin: 120px 0px;
     }
 }
 
