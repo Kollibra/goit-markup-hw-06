@@ -1080,7 +1080,7 @@ footer {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.06em;
-    min-width: 165px;
+    width: 165px;
     height: 40px;
     align-items: center;
     text-align: center;
@@ -1089,6 +1089,7 @@ footer {
     border: 1px; 
     letter-spacing: 0.04em;
     cursor: pointer;
+    margin: 0 auto;
 
   }
   @media (min-width: 1158px) {
