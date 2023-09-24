@@ -331,6 +331,8 @@ letter-spacing: 0.02em;
 
 	.contact {
 		display: block;
+        align-content: space-between;
+
 	}
 
 	.site-contact {
@@ -339,6 +341,11 @@ letter-spacing: 0.02em;
 		gap: 12px;
 		align-items: center;
 		font-style: normal;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        
+
+
 	}
     
 
@@ -892,7 +899,7 @@ letter-spacing: 0.02em;
       flex-wrap: wrap;
       gap: 72px 24px;
       align-items: start;
-      max-width: 584px;
+      width: 584px;
     }
     .footer-social-media {
         margin: 0;
@@ -904,7 +911,7 @@ letter-spacing: 0.02em;
       flex-wrap: nowrap;
       gap: 0;
       align-items: start;
-      min-width: 1158px;
+      width: 1158px;
       align-items: baseline;
     }
     .footer-inscripshion {
